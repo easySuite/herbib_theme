@@ -1,0 +1,410 @@
+/**
+ * Variables
+ *
+ * @author magnify
+ */
+/* Spacing variables
+   ========================================================================== */
+/* Zen Grid variables
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Standard color definitions
+   ========================================================================== */
+/* Font library
+   ========================================================================== */
+/* Typography
+   ========================================================================== */
+/* Font variables
+   ========================================================================== */
+/* Font sizes
+   ========================================================================== */
+/* Labels
+   ========================================================================== */
+/* Navigation
+   ========================================================================== */
+/* Availability
+   ========================================================================== */
+/**
+ * Colors that can be configured through theme settings.
+ *
+ * Every color settings MUST be in HEX format..
+ * @author magnify
+ */
+/* Body */
+/* Topbar */
+/* Header */
+/* Navigation */
+/* Tabroll */
+/* Links */
+/* Labels */
+/* Content */
+/* List */
+/* Footer */
+/* Buttons */
+/* Dialog box */
+/* Funny facts */
+/* Carousel */
+/**
+ * Rules that can be configured is located in this file.
+ *
+ * @author magnify
+ */
+/* Topbar background color */
+/* line 9, ../../ddbasic/sass/configuration/_configuration.scss */
+.topbar {
+  padding-top: 20px;
+  background-color: #a49e90;
+}
+
+/* Header background color */
+/* line 17, ../../ddbasic/sass/configuration/_configuration.scss */
+.header-wrapper {
+  background-color: #a49e90;
+}
+
+/* Navigation background color */
+/* line 24, ../../ddbasic/sass/configuration/_configuration.scss */
+.navigation-wrapper {
+  background-color: #000000;
+}
+
+/* Links */
+/* line 31, ../../ddbasic/sass/configuration/_configuration.scss */
+a {
+  font-weight: 400;
+}
+/* line 34, ../../ddbasic/sass/configuration/_configuration.scss */
+a:link {
+  color: #a84598;
+  text-decoration: none;
+}
+/* line 39, ../../ddbasic/sass/configuration/_configuration.scss */
+a:visited {
+  color: #722f67;
+  text-decoration: none;
+}
+/* line 44, ../../ddbasic/sass/configuration/_configuration.scss */
+a:hover {
+  color: #b660a8;
+  text-decoration: underline;
+}
+/* line 48, ../../ddbasic/sass/configuration/_configuration.scss */
+a:hover i[class^="icon-"] {
+  text-decoration: none;
+}
+/* line 53, ../../ddbasic/sass/configuration/_configuration.scss */
+a:focus {
+  color: #b660a8;
+}
+
+/* Layout background color */
+/* line 61, ../../ddbasic/sass/configuration/_configuration.scss */
+.layout-wrapper {
+  background-color: #fffffe;
+}
+
+/* Article background extends */
+/* Footer background color */
+/* line 83, ../../ddbasic/sass/configuration/_configuration.scss */
+.footer {
+  background-color: #444442;
+}
+
+/* Bottom background color */
+/* line 90, ../../ddbasic/sass/configuration/_configuration.scss */
+.bottom {
+  background-color: #373735;
+}
+
+/**
+ * Mixins
+ *
+ * @author magnify
+ */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Typography mixins
+ *
+ * These are mixins to allow for use in media queries
+   ========================================================================== */
+/* Availability
+   ========================================================================== */
+/* Pseudo arrow
+ *
+ * Usage example: pseudo-arrow(10px, #000, top, center, $offset: 20px)
+   ========================================================================== */
+/**
+ * Buttons
+ *
+ * @author magnify
+ */
+/* Variables
+   ========================================================================== */
+/* Extends
+   ========================================================================== */
+/* Mixins
+   ========================================================================== */
+/* Default button, we dont use gradiant mixin sin since it's part of color module */
+/* line 97, ../../ddbasic/sass/framework/_buttons.scss */
+.button,
+a.button {
+  background-color: #444443;
+  border: 1px;
+  color: #fffff8;
+  line-height: 100%;
+  padding: 8px 14px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFlMWUxZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444443), color-stop(100%, #1e1e1f));
+  background-image: -moz-linear-gradient(#444443, #1e1e1f);
+  background-image: -webkit-linear-gradient(#444443, #1e1e1f);
+  background-image: linear-gradient(#444443, #1e1e1f);
+}
+/* line 109, ../../ddbasic/sass/framework/_buttons.scss */
+.button:link, .button:visited, .button:focus, .button:active,
+a.button:link,
+a.button:visited,
+a.button:focus,
+a.button:active {
+  color: #fffff8;
+  text-decoration: none;
+  background-image: none;
+  background-color: #444443;
+}
+/* line 119, ../../ddbasic/sass/framework/_buttons.scss */
+.button:hover,
+a.button:hover {
+  background-color: #1e1e1e;
+  background-image: none;
+}
+
+/* Default button */
+/* Theme button */
+/* Action button */
+/* Warning button */
+/* Danger button */
+/* Don't use native buttons on iOS */
+/* line 152, ../../ddbasic/sass/framework/_buttons.scss */
+input[type=submit].button,
+button.button {
+  -webkit-appearance: none;
+}
+
+/* Correct FF button padding */
+@-moz-document url-prefix() {
+  /* line 160, ../../ddbasic/sass/framework/_buttons.scss */
+  button::-moz-focus-inner,
+  input[type="reset"]::-moz-focus-inner,
+  input[type="button"]::-moz-focus-inner,
+  input[type="submit"]::-moz-focus-inner,
+  input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+}
+/* line 1, ../sass/_custom.scss */
+body {
+  background-color: #a49e90;
+}
+
+/* line 5, ../sass/_custom.scss */
+a:link,
+a:visited {
+  color: #a84598;
+}
+
+/* line 10, ../sass/_custom.scss */
+.navigation-wrapper {
+  background-color: transparent;
+}
+
+/* line 14, ../sass/_custom.scss */
+.site-name,
+.frontpage-layout .layout-wrapper {
+  display: none;
+}
+
+/* line 19, ../sass/_custom.scss */
+.main-menu li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+/* line 25, ../sass/_custom.scss */
+.main-menu li:first-child {
+  background-color: #a84598;
+}
+
+/* line 29, ../sass/_custom.scss */
+.main-menu li:first-child + li {
+  background-color: #178498;
+}
+
+/* line 33, ../sass/_custom.scss */
+.main-menu li:first-child + li + li {
+  background-color: #86a0c3;
+}
+
+/* line 37, ../sass/_custom.scss */
+.main-menu li:first-child + li + li + li {
+  background-color: #c3be2c;
+}
+
+/* line 41, ../sass/_custom.scss */
+.main-menu li a {
+  display: block;
+  width: 100%;
+}
+
+/* line 46, ../sass/_custom.scss */
+.main-menu li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 51, ../sass/_custom.scss */
+.main-menu li a span {
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* line 56, ../sass/_custom.scss */
+.secondary-menu {
+  background-color: #000;
+  display: block;
+  width: 100%;
+}
+/* line 61, ../sass/_custom.scss */
+.secondary-menu .menu-item.active,
+.secondary-menu .menu-item,
+.secondary-menu .menu-item:hover {
+  color: #fff;
+  font-size: 130%;
+}
+/* line 68, ../sass/_custom.scss */
+.secondary-menu .menu-item,
+.secondary-menu .first .menu-item {
+  display: block;
+  margin-left: 10px;
+  margin-right: 0;
+}
+/* line 75, ../sass/_custom.scss */
+.secondary-menu li {
+  border: none;
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+/* line 83, ../sass/_custom.scss */
+.search .form-text,
+.search-field-in-content .form-text,
+.user .form-text,
+.search .form-submit,
+.search-field-in-content .form-submit,
+.user .form-submit {
+  border-radius: 0;
+}
+
+/* line 92, ../sass/_custom.scss */
+.search label,
+.user label {
+  display: none;
+}
+
+/* line 97, ../sass/_custom.scss */
+header .search .form-actions,
+header .search-field-in-content .form-actions,
+.pane-user-login .form-actions {
+  top: 0;
+}
+
+/* line 103, ../sass/_custom.scss */
+.topbar {
+  margin-bottom: 13px;
+}
+
+/* line 107, ../sass/_custom.scss */
+.logo img {
+  max-height: initial;
+}
+
+/* line 112, ../sass/_custom.scss */
+.topbar-menu .menu-item {
+  background-color: #000;
+  font-size: 180%;
+  margin-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-shadow: none;
+}
+/* line 121, ../sass/_custom.scss */
+.topbar-menu .menu-item.active {
+  background-color: #a84598;
+}
+
+/* line 126, ../sass/_custom.scss */
+.pane-ding-library-opening-hours-ding-library-opened-today {
+  background-color: #000;
+  min-height: 370px;
+}
+/* line 130, ../sass/_custom.scss */
+.pane-ding-library-opening-hours-ding-library-opened-today .pane-title,
+.pane-ding-library-opening-hours-ding-library-opened-today .library .hours {
+  color: #fff;
+}
+/* line 135, ../sass/_custom.scss */
+.pane-ding-library-opening-hours-ding-library-opened-today ul .library,
+.pane-ding-library-opening-hours-ding-library-opened-today ul .library:nth-of-type(2n+2) {
+  background-color: transparent;
+  border-bottom: 1px dashed #fff;
+}
+/* line 141, ../sass/_custom.scss */
+.pane-ding-library-opening-hours-ding-library-opened-today ul .library:first-child {
+  border-top: 1px dashed #fff;
+}
+
+/* line 146, ../sass/_custom.scss */
+.ding-library-opening-hours .day .hours {
+  color: #fff;
+}
+
+/* line 150, ../sass/_custom.scss */
+.ding_nodelist .event-time .event-day,
+.ding_nodelist-carousel .pagination .selected,
+.label a:link,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:link,
+.subjects .subject a:link,
+.news-list .news-label a:link,
+.super-heading .field-name-field-ding-news-library .field-item a:link,
+.label a:visited,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:visited,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:visited,
+.subjects .subject a:visited,
+.news-list .news-label a:visited,
+.super-heading .field-name-field-ding-news-library .field-item a:visited {
+  background-color: #a84598;
+}
+
+/* line 167, ../sass/_custom.scss */
+.label a:hover,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover,
+.subjects .subject a:hover,
+.news-list .news-label a:hover,
+.super-heading .field-name-field-ding-news-library .field-item a:hover {
+  background-color: #b660a8;
+}
+
+/* line 176, ../sass/_custom.scss */
+.bottom {
+  background-color: #191919;
+}

@@ -1,0 +1,178 @@
+body {
+  background-color: $body-background-color;
+}
+
+a:link,
+a:visited {
+  color: $link-color;
+}
+
+.navigation-wrapper {
+  background-color: transparent;
+}
+
+.site-name,
+.frontpage-layout .layout-wrapper {
+  display: none;
+}
+
+.main-menu li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.main-menu li:first-child {
+  background-color: $menu-item-1-background-color;
+}
+
+.main-menu li:first-child + li {
+  background-color: $menu-item-2-background-color;
+}
+
+.main-menu li:first-child + li + li {
+  background-color: $menu-item-3-background-color;
+}
+
+.main-menu li:first-child + li + li + li {
+  background-color: $menu-item-4-background-color;
+}
+
+.main-menu li a {
+  display: block;
+  width: 100%;
+}
+
+.main-menu li a:hover {
+  color: $white;
+  text-decoration: none;
+}
+
+.main-menu li a span {
+  color: $white;
+  margin-left: 10px;
+}
+
+.secondary-menu {
+  background-color: $black;
+  display: block;
+  width: 100%;
+  
+  .menu-item.active,
+  .menu-item,
+  .menu-item:hover {
+    color: $white;
+    font-size: $font-size-large;
+  }
+  
+  .menu-item,
+  .first .menu-item {
+    display: block;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  
+  li {
+    border: none;
+    display: block;
+    float: left;
+    width: 50%;
+  }
+}
+
+.search .form-text,
+.search-field-in-content .form-text,
+.user .form-text,
+.search .form-submit,
+.search-field-in-content .form-submit,
+.user .form-submit {
+  border-radius: 0;
+}
+
+.search label,
+.user label {
+  display: none;
+}
+
+header .search .form-actions,
+header .search-field-in-content .form-actions,
+.pane-user-login .form-actions {
+  top: 0;
+}
+
+.topbar {
+  margin-bottom: 13px;
+}
+
+.logo img {
+  max-height: initial;
+}
+
+.topbar-menu {
+  .menu-item {
+    background-color: $black;
+    font-size: $font-size-largest;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-shadow: none;
+  }
+  
+  .menu-item.active {
+    background-color: $menu-item-1-background-color;
+  }
+}
+
+.pane-ding-library-opening-hours-ding-library-opened-today {
+  background-color: $black;
+  min-height: 370px;
+  
+  .pane-title,
+  .library .hours {
+    color: $white;
+  }
+  
+  ul .library,
+  ul .library:nth-of-type(2n+2) {
+    background-color: transparent;
+    border-bottom: 1px dashed $white;
+  }
+  
+  ul .library:first-child {
+    border-top: 1px dashed $white;
+  }
+}
+
+.ding-library-opening-hours .day .hours {
+  color: $white;
+}
+
+.ding_nodelist .event-time .event-day,
+.ding_nodelist-carousel .pagination .selected,
+.label a:link,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:link,
+.subjects .subject a:link,
+.news-list .news-label a:link,
+.super-heading .field-name-field-ding-news-library .field-item a:link,
+.label a:visited,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:visited,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:visited,
+.subjects .subject a:visited,
+.news-list .news-label a:visited,
+.super-heading .field-name-field-ding-news-library .field-item a:visited {
+  background-color: $label-bg-color;
+}
+
+.label a:hover,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover,
+.subjects .subject a:hover,
+.news-list .news-label a:hover,
+.super-heading .field-name-field-ding-news-library .field-item a:hover {
+  background-color: $label-bg-color-hover;
+}
+
+.bottom {
+  background-color: $bottom-background-color;
+}

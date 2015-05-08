@@ -1,0 +1,9 @@
+;----------// Theme Information
+  name        = Herlev theme
+  description = Herlev subtheme
+  core        = 7.x
+  release     = 7.x-1.x
+
+  base theme = ddbasic
+  
+  stylesheets[all][] = css/herlev.styles.css
