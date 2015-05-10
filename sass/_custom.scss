@@ -3,7 +3,13 @@ body {
 }
 
 a:link,
-a:visited {
+a:visited,
+.pane-ding-facetbrowser a:visited,
+.pane-search-backends a:visited,
+.pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-short:before,
+.pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-long:after,
+.pane-ting-object .collapsible .field-group-format-title:before,
+.pane-ting-object .ding-periodical-fold:before {
   color: $link-color;
 }
 
@@ -18,7 +24,18 @@ a:visited {
 
 .main-menu {
   .menu-item.active {
+    position: relative;
     text-decoration: none;
+  }
+  
+  .menu-item.active:after {
+    background-color: $black;
+	bottom: 0;
+	content: "";
+	height: 4px;
+	left: 0;
+	position: absolute;
+	width: 100%;
   }
   
   li {
@@ -194,5 +211,26 @@ header .search-field-in-content .form-actions,
   > li a:hover,
   li:before {
     color: $white;
+  }
+}
+
+@include small-medium() {
+  .main-menu li {
+    padding-left: 10px;
+    width: 100%;
+  }
+  
+  .secondary-menu li {
+    background-color: $black;
+	padding-left: 10px;
+	width: 100%;
+  }
+  
+  .pane-ding-library-opening-hours-ding-library-opened-today {
+    min-height: initial;
+  }
+  
+  .topbar-menu .menu-item {
+    font-size: $font-size-reset;
   }
 }
