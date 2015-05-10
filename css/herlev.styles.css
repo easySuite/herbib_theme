@@ -230,72 +230,69 @@ a:visited {
   display: none;
 }
 
-/* line 19, ../sass/_custom.scss */
+/* line 20, ../sass/_custom.scss */
+.main-menu .menu-item.active {
+  text-decoration: none;
+}
+/* line 24, ../sass/_custom.scss */
 .main-menu li {
   display: block;
   float: left;
   width: 25%;
 }
-
-/* line 25, ../sass/_custom.scss */
-.main-menu li:first-child {
-  background-color: #a84598;
-}
-
 /* line 29, ../sass/_custom.scss */
-.main-menu li:first-child + li {
-  background-color: #178498;
-}
-
-/* line 33, ../sass/_custom.scss */
-.main-menu li:first-child + li + li {
-  background-color: #86a0c3;
-}
-
-/* line 37, ../sass/_custom.scss */
-.main-menu li:first-child + li + li + li {
-  background-color: #c3be2c;
-}
-
-/* line 41, ../sass/_custom.scss */
 .main-menu li a {
   display: block;
   width: 100%;
 }
-
-/* line 46, ../sass/_custom.scss */
-.main-menu li a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* line 51, ../sass/_custom.scss */
+/* line 33, ../sass/_custom.scss */
 .main-menu li a span {
   color: #fff;
   margin-left: 10px;
 }
+/* line 39, ../sass/_custom.scss */
+.main-menu li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 45, ../sass/_custom.scss */
+.main-menu li:first-child {
+  background-color: #a84598;
+}
+/* line 49, ../sass/_custom.scss */
+.main-menu li:first-child + li {
+  background-color: #178498;
+}
+/* line 53, ../sass/_custom.scss */
+.main-menu li:first-child + li + li {
+  background-color: #86a0c3;
+}
+/* line 57, ../sass/_custom.scss */
+.main-menu li:first-child + li + li + li {
+  background-color: #c3be2c;
+}
 
-/* line 56, ../sass/_custom.scss */
+/* line 62, ../sass/_custom.scss */
 .secondary-menu {
   background-color: #000;
   display: block;
   width: 100%;
 }
-/* line 61, ../sass/_custom.scss */
+/* line 67, ../sass/_custom.scss */
 .secondary-menu .menu-item.active,
 .secondary-menu .menu-item,
 .secondary-menu .menu-item:hover {
   color: #fff;
   font-size: 130%;
 }
-/* line 68, ../sass/_custom.scss */
+/* line 74, ../sass/_custom.scss */
 .secondary-menu .menu-item,
 .secondary-menu .first .menu-item {
   display: block;
   margin-left: 10px;
   margin-right: 0;
 }
-/* line 75, ../sass/_custom.scss */
+/* line 81, ../sass/_custom.scss */
 .secondary-menu li {
   border: none;
   display: block;
@@ -303,7 +300,7 @@ a:visited {
   width: 50%;
 }
 
-/* line 83, ../sass/_custom.scss */
+/* line 89, ../sass/_custom.scss */
 .search .form-text,
 .search-field-in-content .form-text,
 .user .form-text,
@@ -313,30 +310,30 @@ a:visited {
   border-radius: 0;
 }
 
-/* line 92, ../sass/_custom.scss */
+/* line 98, ../sass/_custom.scss */
 .search label,
 .user label {
   display: none;
 }
 
-/* line 97, ../sass/_custom.scss */
+/* line 103, ../sass/_custom.scss */
 header .search .form-actions,
 header .search-field-in-content .form-actions,
 .pane-user-login .form-actions {
   top: 0;
 }
 
-/* line 103, ../sass/_custom.scss */
+/* line 109, ../sass/_custom.scss */
 .topbar {
   margin-bottom: 13px;
 }
 
-/* line 107, ../sass/_custom.scss */
+/* line 113, ../sass/_custom.scss */
 .logo img {
   max-height: initial;
 }
 
-/* line 112, ../sass/_custom.scss */
+/* line 118, ../sass/_custom.scss */
 .topbar-menu .menu-item {
   background-color: #000;
   font-size: 180%;
@@ -345,38 +342,38 @@ header .search-field-in-content .form-actions,
   padding-top: 15px;
   text-shadow: none;
 }
-/* line 121, ../sass/_custom.scss */
+/* line 127, ../sass/_custom.scss */
 .topbar-menu .menu-item.active {
   background-color: #a84598;
 }
 
-/* line 126, ../sass/_custom.scss */
+/* line 132, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today {
   background-color: #000;
   min-height: 370px;
 }
-/* line 130, ../sass/_custom.scss */
+/* line 136, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today .pane-title,
 .pane-ding-library-opening-hours-ding-library-opened-today .library .hours {
   color: #fff;
 }
-/* line 135, ../sass/_custom.scss */
+/* line 141, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library,
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library:nth-of-type(2n+2) {
   background-color: transparent;
   border-bottom: 1px dashed #fff;
 }
-/* line 141, ../sass/_custom.scss */
+/* line 147, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library:first-child {
   border-top: 1px dashed #fff;
 }
 
-/* line 146, ../sass/_custom.scss */
+/* line 152, ../sass/_custom.scss */
 .ding-library-opening-hours .day .hours {
   color: #fff;
 }
 
-/* line 150, ../sass/_custom.scss */
+/* line 156, ../sass/_custom.scss */
 .ding_nodelist .event-time .event-day,
 .ding_nodelist-carousel .pagination .selected,
 .label a:link,
@@ -390,11 +387,12 @@ header .search-field-in-content .form-actions,
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:visited,
 .subjects .subject a:visited,
 .news-list .news-label a:visited,
-.super-heading .field-name-field-ding-news-library .field-item a:visited {
+.super-heading .field-name-field-ding-news-library .field-item a:visited,
+.event-list-leaf .event-list-day {
   background-color: #a84598;
 }
 
-/* line 167, ../sass/_custom.scss */
+/* line 174, ../sass/_custom.scss */
 .label a:hover,
 .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover,
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover,
@@ -404,7 +402,19 @@ header .search-field-in-content .form-actions,
   background-color: #b660a8;
 }
 
-/* line 176, ../sass/_custom.scss */
+/* line 183, ../sass/_custom.scss */
 .bottom {
   background-color: #191919;
+}
+
+/* line 188, ../sass/_custom.scss */
+.sub-menu > li {
+  background-color: #a84598;
+  padding-left: 10px;
+}
+/* line 193, ../sass/_custom.scss */
+.sub-menu > li a,
+.sub-menu > li a:hover,
+.sub-menu li:before {
+  color: #fff;
 }

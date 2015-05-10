@@ -16,41 +16,47 @@ a:visited {
   display: none;
 }
 
-.main-menu li {
-  display: block;
-  float: left;
-  width: 25%;
-}
+.main-menu {
+  .menu-item.active {
+    text-decoration: none;
+  }
+  
+  li {
+    display: block;
+    float: left;
+    width: 25%;
+	
+	a {
+      display: block;
+      width: 100%;
+	 
+	  span {
+        color: $white;
+        margin-left: 10px;
+      }
+    }
+	
+	a:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
 
-.main-menu li:first-child {
-  background-color: $menu-item-1-background-color;
-}
+  li:first-child {
+    background-color: $menu-item-1-background-color;
+  }
 
-.main-menu li:first-child + li {
-  background-color: $menu-item-2-background-color;
-}
+  li:first-child + li {
+    background-color: $menu-item-2-background-color;
+  }
 
-.main-menu li:first-child + li + li {
-  background-color: $menu-item-3-background-color;
-}
+  li:first-child + li + li {
+    background-color: $menu-item-3-background-color;
+  }
 
-.main-menu li:first-child + li + li + li {
-  background-color: $menu-item-4-background-color;
-}
-
-.main-menu li a {
-  display: block;
-  width: 100%;
-}
-
-.main-menu li a:hover {
-  color: $white;
-  text-decoration: none;
-}
-
-.main-menu li a span {
-  color: $white;
-  margin-left: 10px;
+  li:first-child + li + li + li {
+    background-color: $menu-item-4-background-color;
+  }
 }
 
 .secondary-menu {
@@ -160,7 +166,8 @@ header .search-field-in-content .form-actions,
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:visited,
 .subjects .subject a:visited,
 .news-list .news-label a:visited,
-.super-heading .field-name-field-ding-news-library .field-item a:visited {
+.super-heading .field-name-field-ding-news-library .field-item a:visited,
+.event-list-leaf .event-list-day {
   background-color: $label-bg-color;
 }
 
@@ -175,4 +182,17 @@ header .search-field-in-content .form-actions,
 
 .bottom {
   background-color: $bottom-background-color;
+}
+
+.sub-menu {
+  > li {
+    background-color: $menu-item-1-background-color;
+	padding-left: 10px;
+  }
+  
+  > li a,
+  > li a:hover,
+  li:before {
+    color: $white;
+  }
 }
