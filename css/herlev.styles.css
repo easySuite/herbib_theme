@@ -51,68 +51,68 @@
  * @author magnify
  */
 /* Topbar background color */
-/* line 9, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 9, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .topbar {
   padding-top: 20px;
   background-color: #a49e90;
 }
 
 /* Header background color */
-/* line 17, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 17, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .header-wrapper {
   background-color: #a49e90;
 }
 
 /* Navigation background color */
-/* line 24, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 24, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .navigation-wrapper {
   background-color: #000000;
 }
 
 /* Links */
-/* line 31, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 31, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a {
   font-weight: 400;
 }
-/* line 34, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 34, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:link {
   color: #a84598;
   text-decoration: none;
 }
-/* line 39, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 39, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:visited {
   color: #722f67;
   text-decoration: none;
 }
-/* line 44, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 44, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:hover {
   color: #b660a8;
   text-decoration: underline;
 }
-/* line 48, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 48, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:hover i[class^="icon-"] {
   text-decoration: none;
 }
-/* line 53, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 53, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:focus {
   color: #b660a8;
 }
 
 /* Layout background color */
-/* line 61, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 61, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .layout-wrapper {
   background-color: #fffffe;
 }
 
 /* Article background extends */
 /* Footer background color */
-/* line 83, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 83, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .footer {
   background-color: #444442;
 }
 
 /* Bottom background color */
-/* line 90, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 90, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .bottom {
   background-color: #373735;
 }
@@ -148,7 +148,7 @@ a:focus {
 /* Mixins
    ========================================================================== */
 /* Default button, we dont use gradiant mixin sin since it's part of color module */
-/* line 97, ../../ddbasic/sass/framework/_buttons.scss */
+/* line 97, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
 .button,
 a.button {
   background-color: #444443;
@@ -166,7 +166,7 @@ a.button {
   background-image: -webkit-linear-gradient(#444443, #1e1e1f);
   background-image: linear-gradient(#444443, #1e1e1f);
 }
-/* line 109, ../../ddbasic/sass/framework/_buttons.scss */
+/* line 109, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
 .button:link, .button:visited, .button:focus, .button:active,
 a.button:link,
 a.button:visited,
@@ -177,7 +177,7 @@ a.button:active {
   background-image: none;
   background-color: #444443;
 }
-/* line 119, ../../ddbasic/sass/framework/_buttons.scss */
+/* line 119, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
 .button:hover,
 a.button:hover {
   background-color: #1e1e1e;
@@ -190,7 +190,7 @@ a.button:hover {
 /* Warning button */
 /* Danger button */
 /* Don't use native buttons on iOS */
-/* line 152, ../../ddbasic/sass/framework/_buttons.scss */
+/* line 152, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
 input[type=submit].button,
 button.button {
   -webkit-appearance: none;
@@ -198,7 +198,7 @@ button.button {
 
 /* Correct FF button padding */
 @-moz-document url-prefix() {
-  /* line 160, ../../ddbasic/sass/framework/_buttons.scss */
+  /* line 160, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
   button::-moz-focus-inner,
   input[type="reset"]::-moz-focus-inner,
   input[type="button"]::-moz-focus-inner,
