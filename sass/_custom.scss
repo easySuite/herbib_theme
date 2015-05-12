@@ -30,30 +30,30 @@ a:visited,
   
   .menu-item.active:after {
     background-color: $black;
-	bottom: 0;
-	content: "";
-	height: 4px;
-	left: 0;
-	position: absolute;
-	width: 100%;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
   }
   
   li {
     display: block;
     float: left;
     width: 25%;
-	
-	a {
+    
+    a {
       display: block;
       width: 100%;
-	 
-	  span {
+     
+      span {
         color: $white;
         margin-left: 10px;
       }
     }
-	
-	a:hover {
+    
+    a:hover {
       color: $white;
       text-decoration: none;
     }
@@ -204,7 +204,7 @@ header .search-field-in-content .form-actions,
 .sub-menu {
   > li {
     background-color: $menu-item-1-background-color;
-	padding-left: 10px;
+    padding-left: 10px;
   }
   
   > li a,
@@ -222,8 +222,8 @@ header .search-field-in-content .form-actions,
   
   .secondary-menu li {
     background-color: $black;
-	padding-left: 10px;
-	width: 100%;
+    padding-left: 10px;
+    width: 100%;
   }
   
   .pane-ding-library-opening-hours-ding-library-opened-today {
