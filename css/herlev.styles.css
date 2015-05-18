@@ -436,27 +436,95 @@ header .search-field-in-content .form-actions,
   color: #fff;
 }
 
+/* line 217, ../sass/_custom.scss */
+.attachment-first {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 221, ../sass/_custom.scss */
+.attachment-second {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 225, ../sass/_custom.scss */
+.attachment-third {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 229, ../sass/_custom.scss */
+.attachment-fourth {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 218, ../sass/_custom.scss */
+  /* line 234, ../sass/_custom.scss */
   .main-menu li {
     padding-left: 10px;
     width: 100%;
   }
 
-  /* line 223, ../sass/_custom.scss */
+  /* line 239, ../sass/_custom.scss */
   .secondary-menu li {
     background-color: #000;
     padding-left: 10px;
     width: 100%;
   }
 
-  /* line 229, ../sass/_custom.scss */
+  /* line 245, ../sass/_custom.scss */
   .pane-ding-library-opening-hours-ding-library-opened-today {
     min-height: initial;
   }
 
-  /* line 233, ../sass/_custom.scss */
+  /* line 249, ../sass/_custom.scss */
   .topbar-menu .menu-item {
     font-size: 100%;
+  }
+
+  /* line 253, ../sass/_custom.scss */
+  .attachment-first,
+  .attachment-third,
+  .attachment-second {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
   }
 }
