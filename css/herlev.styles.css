@@ -51,68 +51,68 @@
  * @author magnify
  */
 /* Topbar background color */
-/* line 9, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 9, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .topbar {
   padding-top: 20px;
   background-color: #a49e90;
 }
 
 /* Header background color */
-/* line 17, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 17, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .header-wrapper {
   background-color: #a49e90;
 }
 
 /* Navigation background color */
-/* line 24, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 24, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .navigation-wrapper {
   background-color: #000000;
 }
 
 /* Links */
-/* line 31, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 31, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a {
   font-weight: 400;
 }
-/* line 34, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 34, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:link {
   color: #a84598;
   text-decoration: none;
 }
-/* line 39, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 39, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:visited {
   color: #722f67;
   text-decoration: none;
 }
-/* line 44, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 44, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:hover {
   color: #b660a8;
   text-decoration: underline;
 }
-/* line 48, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 48, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:hover i[class^="icon-"] {
   text-decoration: none;
 }
-/* line 53, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 53, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:focus {
   color: #b660a8;
 }
 
 /* Layout background color */
-/* line 61, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 61, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .layout-wrapper {
   background-color: #fffffe;
 }
 
 /* Article background extends */
 /* Footer background color */
-/* line 83, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 83, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .footer {
   background-color: #444442;
 }
 
 /* Bottom background color */
-/* line 90, ../../ddbasic/sass/configuration/_configuration.scss */
+/* line 90, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .bottom {
   background-color: #373735;
 }
@@ -148,7 +148,7 @@ a:focus {
 /* Mixins
    ========================================================================== */
 /* Default button, we dont use gradiant mixin sin since it's part of color module */
-/* line 97, ../../ddbasic/sass/framework/_buttons.scss */
+/* line 97, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
 .button,
 a.button {
   background-color: #444443;
@@ -166,7 +166,7 @@ a.button {
   background-image: -webkit-linear-gradient(#444443, #1e1e1f);
   background-image: linear-gradient(#444443, #1e1e1f);
 }
-/* line 109, ../../ddbasic/sass/framework/_buttons.scss */
+/* line 109, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
 .button:link, .button:visited, .button:focus, .button:active,
 a.button:link,
 a.button:visited,
@@ -177,7 +177,7 @@ a.button:active {
   background-image: none;
   background-color: #444443;
 }
-/* line 119, ../../ddbasic/sass/framework/_buttons.scss */
+/* line 119, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
 .button:hover,
 a.button:hover {
   background-color: #1e1e1e;
@@ -190,7 +190,7 @@ a.button:hover {
 /* Warning button */
 /* Danger button */
 /* Don't use native buttons on iOS */
-/* line 152, ../../ddbasic/sass/framework/_buttons.scss */
+/* line 152, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
 input[type=submit].button,
 button.button {
   -webkit-appearance: none;
@@ -198,7 +198,7 @@ button.button {
 
 /* Correct FF button padding */
 @-moz-document url-prefix() {
-  /* line 160, ../../ddbasic/sass/framework/_buttons.scss */
+  /* line 160, ../../../../../profiles/ding2/themes/ddbasic/sass/framework/_buttons.scss */
   button::-moz-focus-inner,
   input[type="reset"]::-moz-focus-inner,
   input[type="button"]::-moz-focus-inner,
@@ -215,87 +215,101 @@ body {
 
 /* line 5, ../sass/_custom.scss */
 a:link,
-a:visited {
+a:visited,
+.pane-ding-facetbrowser a:visited,
+.pane-search-backends a:visited,
+.pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-short:before,
+.pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-long:after,
+.pane-ting-object .collapsible .field-group-format-title:before,
+.pane-ting-object .ding-periodical-fold:before {
   color: #a84598;
 }
 
-/* line 10, ../sass/_custom.scss */
+/* line 16, ../sass/_custom.scss */
 .navigation-wrapper {
   background-color: transparent;
 }
 
-/* line 14, ../sass/_custom.scss */
+/* line 20, ../sass/_custom.scss */
 .site-name,
 .frontpage-layout .layout-wrapper {
   display: none;
 }
 
-/* line 19, ../sass/_custom.scss */
+/* line 26, ../sass/_custom.scss */
+.main-menu .menu-item.active {
+  position: relative;
+  text-decoration: none;
+}
+/* line 31, ../sass/_custom.scss */
+.main-menu .menu-item.active:after {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+/* line 41, ../sass/_custom.scss */
 .main-menu li {
   display: block;
   float: left;
   width: 25%;
 }
-
-/* line 25, ../sass/_custom.scss */
-.main-menu li:first-child {
-  background-color: #a84598;
-}
-
-/* line 29, ../sass/_custom.scss */
-.main-menu li:first-child + li {
-  background-color: #178498;
-}
-
-/* line 33, ../sass/_custom.scss */
-.main-menu li:first-child + li + li {
-  background-color: #86a0c3;
-}
-
-/* line 37, ../sass/_custom.scss */
-.main-menu li:first-child + li + li + li {
-  background-color: #c3be2c;
-}
-
-/* line 41, ../sass/_custom.scss */
+/* line 46, ../sass/_custom.scss */
 .main-menu li a {
   display: block;
   width: 100%;
 }
-
-/* line 46, ../sass/_custom.scss */
-.main-menu li a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* line 51, ../sass/_custom.scss */
+/* line 50, ../sass/_custom.scss */
 .main-menu li a span {
   color: #fff;
   margin-left: 10px;
 }
-
 /* line 56, ../sass/_custom.scss */
+.main-menu li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 62, ../sass/_custom.scss */
+.main-menu li:first-child {
+  background-color: #a84598;
+}
+/* line 66, ../sass/_custom.scss */
+.main-menu li:first-child + li {
+  background-color: #178498;
+}
+/* line 70, ../sass/_custom.scss */
+.main-menu li:first-child + li + li {
+  background-color: #86a0c3;
+}
+/* line 74, ../sass/_custom.scss */
+.main-menu li:first-child + li + li + li {
+  background-color: #c3be2c;
+}
+
+/* line 79, ../sass/_custom.scss */
 .secondary-menu {
   background-color: #000;
   display: block;
   width: 100%;
 }
-/* line 61, ../sass/_custom.scss */
+/* line 84, ../sass/_custom.scss */
 .secondary-menu .menu-item.active,
 .secondary-menu .menu-item,
 .secondary-menu .menu-item:hover {
   color: #fff;
   font-size: 130%;
 }
-/* line 68, ../sass/_custom.scss */
+/* line 91, ../sass/_custom.scss */
 .secondary-menu .menu-item,
 .secondary-menu .first .menu-item {
   display: block;
   margin-left: 10px;
   margin-right: 0;
 }
-/* line 75, ../sass/_custom.scss */
+/* line 98, ../sass/_custom.scss */
 .secondary-menu li {
   border: none;
   display: block;
@@ -303,7 +317,7 @@ a:visited {
   width: 50%;
 }
 
-/* line 83, ../sass/_custom.scss */
+/* line 106, ../sass/_custom.scss */
 .search .form-text,
 .search-field-in-content .form-text,
 .user .form-text,
@@ -313,30 +327,30 @@ a:visited {
   border-radius: 0;
 }
 
-/* line 92, ../sass/_custom.scss */
+/* line 115, ../sass/_custom.scss */
 .search label,
 .user label {
   display: none;
 }
 
-/* line 97, ../sass/_custom.scss */
+/* line 120, ../sass/_custom.scss */
 header .search .form-actions,
 header .search-field-in-content .form-actions,
 .pane-user-login .form-actions {
   top: 0;
 }
 
-/* line 103, ../sass/_custom.scss */
+/* line 126, ../sass/_custom.scss */
 .topbar {
   margin-bottom: 13px;
 }
 
-/* line 107, ../sass/_custom.scss */
+/* line 130, ../sass/_custom.scss */
 .logo img {
   max-height: initial;
 }
 
-/* line 112, ../sass/_custom.scss */
+/* line 135, ../sass/_custom.scss */
 .topbar-menu .menu-item {
   background-color: #000;
   font-size: 180%;
@@ -345,38 +359,38 @@ header .search-field-in-content .form-actions,
   padding-top: 15px;
   text-shadow: none;
 }
-/* line 121, ../sass/_custom.scss */
+/* line 144, ../sass/_custom.scss */
 .topbar-menu .menu-item.active {
   background-color: #a84598;
 }
 
-/* line 126, ../sass/_custom.scss */
+/* line 149, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today {
   background-color: #000;
   min-height: 370px;
 }
-/* line 130, ../sass/_custom.scss */
+/* line 153, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today .pane-title,
 .pane-ding-library-opening-hours-ding-library-opened-today .library .hours {
   color: #fff;
 }
-/* line 135, ../sass/_custom.scss */
+/* line 158, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library,
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library:nth-of-type(2n+2) {
   background-color: transparent;
   border-bottom: 1px dashed #fff;
 }
-/* line 141, ../sass/_custom.scss */
+/* line 164, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library:first-child {
   border-top: 1px dashed #fff;
 }
 
-/* line 146, ../sass/_custom.scss */
+/* line 169, ../sass/_custom.scss */
 .ding-library-opening-hours .day .hours {
   color: #fff;
 }
 
-/* line 150, ../sass/_custom.scss */
+/* line 173, ../sass/_custom.scss */
 .ding_nodelist .event-time .event-day,
 .ding_nodelist-carousel .pagination .selected,
 .label a:link,
@@ -390,11 +404,12 @@ header .search-field-in-content .form-actions,
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:visited,
 .subjects .subject a:visited,
 .news-list .news-label a:visited,
-.super-heading .field-name-field-ding-news-library .field-item a:visited {
+.super-heading .field-name-field-ding-news-library .field-item a:visited,
+.event-list-leaf .event-list-day {
   background-color: #a84598;
 }
 
-/* line 167, ../sass/_custom.scss */
+/* line 191, ../sass/_custom.scss */
 .label a:hover,
 .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover,
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover,
@@ -404,7 +419,112 @@ header .search-field-in-content .form-actions,
   background-color: #b660a8;
 }
 
-/* line 176, ../sass/_custom.scss */
+/* line 200, ../sass/_custom.scss */
 .bottom {
   background-color: #191919;
+}
+
+/* line 205, ../sass/_custom.scss */
+.sub-menu > li {
+  background-color: #a84598;
+  padding-left: 10px;
+}
+/* line 210, ../sass/_custom.scss */
+.sub-menu > li a,
+.sub-menu > li a:hover,
+.sub-menu li:before {
+  color: #fff;
+}
+
+/* line 217, ../sass/_custom.scss */
+.attachment-first {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 221, ../sass/_custom.scss */
+.attachment-second {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 225, ../sass/_custom.scss */
+.attachment-third {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 229, ../sass/_custom.scss */
+.attachment-fourth {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 234, ../sass/_custom.scss */
+  .main-menu li {
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  /* line 239, ../sass/_custom.scss */
+  .secondary-menu li {
+    background-color: #000;
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  /* line 245, ../sass/_custom.scss */
+  .pane-ding-library-opening-hours-ding-library-opened-today {
+    min-height: initial;
+  }
+
+  /* line 249, ../sass/_custom.scss */
+  .topbar-menu .menu-item {
+    font-size: 100%;
+  }
+
+  /* line 253, ../sass/_custom.scss */
+  .attachment-first,
+  .attachment-third,
+  .attachment-second {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
 }
