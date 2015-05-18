@@ -214,6 +214,22 @@ header .search-field-in-content .form-actions,
   }
 }
 
+.attachment-first {
+  @include zen-grid-item(4, 1);
+}
+
+.attachment-second {
+  @include zen-grid-item(4, 5);
+}
+
+.attachment-third {
+  @include zen-grid-item(4, 1, right);
+}
+
+.attachment-fourth {
+  display: none;
+}
+
 @include small-medium() {
   .main-menu li {
     padding-left: 10px;
@@ -232,5 +248,12 @@ header .search-field-in-content .form-actions,
   
   .topbar-menu .menu-item {
     font-size: $font-size-reset;
+  }
+  
+  .attachment-first,
+  .attachment-third,
+  .attachment-second {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
   }
 }
