@@ -46,305 +46,61 @@
 /* Funny facts */
 /* Carousel */
 /**
- * Buttons
- *
- * @author magnify
- */
-/* Variables
-   ========================================================================== */
-/* Extends
-   ========================================================================== */
-/* Mixins
-   ========================================================================== */
-/* Default button, we dont use gradiant mixin sin since it's part of color module */
-/* line 97, ../sass/configuration/_buttons.scss */
-.button,
-a.button {
-  background-color: #444443;
-  border: 1px;
-  color: #fffff8;
-  line-height: 100%;
-  padding: 8px 14px;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFlMWUxZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444443), color-stop(100%, #1e1e1f));
-  background-image: -moz-linear-gradient(#444443, #1e1e1f);
-  background-image: -webkit-linear-gradient(#444443, #1e1e1f);
-  background-image: linear-gradient(#444443, #1e1e1f);
-}
-/* line 109, ../sass/configuration/_buttons.scss */
-.button:link, .button:visited, .button:focus, .button:active,
-a.button:link,
-a.button:visited,
-a.button:focus,
-a.button:active {
-  color: #fffff8;
-  text-decoration: none;
-  background-image: none;
-  background-color: #444443;
-}
-/* line 119, ../sass/configuration/_buttons.scss */
-.button:hover,
-a.button:hover {
-  background-color: #1e1e1e;
-  background-image: none;
-}
-
-/* Default button */
-/* Theme button */
-/* Action button */
-/* Warning button */
-/* Danger button */
-/* Don't use native buttons on iOS */
-/* line 152, ../sass/configuration/_buttons.scss */
-input[type=submit].button,
-button.button {
-  -webkit-appearance: none;
-}
-
-/* Correct FF button padding */
-@-moz-document url-prefix() {
-  /* line 160, ../sass/configuration/_buttons.scss */
-  button::-moz-focus-inner,
-  input[type="reset"]::-moz-focus-inner,
-  input[type="button"]::-moz-focus-inner,
-  input[type="submit"]::-moz-focus-inner,
-  input[type="file"] > input[type="button"]::-moz-focus-inner {
-    border: none;
-    padding: 0;
-  }
-}
-/* Colors settings */
-/* line 3, ../sass/configuration/_colors_settings.scss */
-body {
-  background-color: #a49e90;
-}
-
-/* line 7, ../sass/configuration/_colors_settings.scss */
-.header-wrapper {
-  background-color: #a49e90;
-}
-
-/* line 11, ../sass/configuration/_colors_settings.scss */
-.topbar {
-  background-color: #a49e90;
-  color: #fffffa;
-}
-
-/* line 16, ../sass/configuration/_colors_settings.scss */
-.navigation-wrapper {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-/* line 21, ../sass/configuration/_colors_settings.scss */
-.main-menu .menu-item,
-.header-wrapper .pane-user-menu .sub-menu .menu-item,
-.secondary-menu .menu-item,
-.system-user-menu .menu-item {
-  color: #ffffff;
-}
-
-/* line 28, ../sass/configuration/_colors_settings.scss */
-.main-menu .menu-item:hover,
-.header-wrapper .pane-user-menu .sub-menu .menu-item:hover,
-.secondary-menu .menu-item:hover,
-.system-user-menu .menu-item:hover,
-.main-menu .menu-item.active,
-.header-wrapper .pane-user-menu .sub-menu .menu-item.active,
-.secondary-menu .menu-item.active,
-.system-user-menu .menu-item.active {
-  color: #ffffff;
-}
-
-/* line 39, ../sass/configuration/_colors_settings.scss */
-.rs-carousel {
-  background-color: #a32e10;
-}
-
-/* line 43, ../sass/configuration/_colors_settings.scss */
-.rs-carousel-inner {
-  background: #d8d8d8;
-}
-
-/* line 47, ../sass/configuration/_colors_settings.scss */
-.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item.active a,
-.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item a:hover {
-  background-color: #b7b7b5;
-}
-
-/* line 52, ../sass/configuration/_colors_settings.scss */
-.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item.active a:before {
-  border-bottom-color: #b7b7b5;
-}
-
-/* line 56, ../sass/configuration/_colors_settings.scss */
-.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item a {
-  background-color: #7f7f7f;
-}
-
-/* line 60, ../sass/configuration/_colors_settings.scss */
-.label a,
-.view-node-search-result .list-item .field-type-taxonomy-term-reference a a,
-.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a,
-.subjects .subject a,
-.news-list .news-label a,
-.super-heading .field-name-field-ding-news-library .field-item a {
-  background-color: #a84598;
-  color: #fffffd;
-}
-
-/* line 70, ../sass/configuration/_colors_settings.scss */
-.label a:hover,
-.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover,
-.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover,
-.subjects .subject a:hover,
-.news-list .news-label a:hover,
-.super-heading .field-name-field-ding-news-library .field-item a:hover,
-.event-list-leaf .event-list-day {
-  background-color: #b660a8;
-  color: #fafaf7;
-}
-
-/* line 81, ../sass/configuration/_colors_settings.scss */
-.layout-wrapper {
-  background-color: #fffffe;
-}
-
-/* line 85, ../sass/configuration/_colors_settings.scss */
-.field-name-field-ding-news-materials .field-item,
-.library-list .views-row, .field-name-field-ding-page-materials .field-item,
-.news-list .news-list-item,
-#ding-library-front .opening-hours-week .header,
-.groups-list .groups-list-item {
-  background-color: #ebebeb;
-}
-
-/* line 93, ../sass/configuration/_colors_settings.scss */
-.field-name-field-ding-news-materials .field-item:nth-child(odd),
-.library-list .views-row:nth-child(odd),
-.field-name-field-ding-page-materials .field-item:nth-child(odd),
-.news-list .news-list-item:nth-child(odd),
-.event-list .event-list-item:nth-child(odd),
-.opening-hours-week .days .odd,
-.staff-list .staff-list-item:nth-child(odd),
-.staff-list-all .staff-list-item:nth-child(odd),
-.groups-list .groups-list-item:nth-child(odd) {
-  background-color: #e8e8e8;
-  color: #4c4c4c;
-}
-
-/* line 106, ../sass/configuration/_colors_settings.scss */
-.field-name-field-ding-news-materials .field-item:nth-child(even),
-.library-list .views-row:nth-child(even),
-.field-name-field-ding-page-materials .field-item:nth-child(even),
-.news-list .news-list-item:nth-child(even),
-.event-list .event-list-item:nth-child(even),
-.opening-hours-week .days .even,
-.staff-list .staff-list-item:nth-child(even),
-.staff-list-all .staff-list-item:nth-child(even),
-.groups-list .groups-list-item:nth-child(even) {
-  background-color: #f2f2f2;
-  color: #4c4c4c;
-}
-
-/* line 119, ../sass/configuration/_colors_settings.scss */
-.footer .pane-title {
-  color: #ffffff;
-}
-
-/* line 123, ../sass/configuration/_colors_settings.scss */
-a:link {
-  color: #a84598;
-}
-
-/* line 127, ../sass/configuration/_colors_settings.scss */
-a:visited,
-a:hover {
-  color: #b660a8;
-}
-
-/* line 132, ../sass/configuration/_colors_settings.scss */
-.ui-dialog {
-  background-color: #00cafd;
-}
-
-/* line 136, ../sass/configuration/_colors_settings.scss */
-.ui-widget-content {
-  color: #000003;
-}
-
-/**
  * Rules that can be configured is located in this file.
  *
  * @author magnify
  */
 /* Topbar background color */
-/* line 9, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .topbar {
   padding-top: 20px;
   background-color: #a49e90;
 }
 
 /* Header background color */
-/* line 17, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .header-wrapper {
   background-color: #a49e90;
 }
 
 /* Navigation background color */
-/* line 24, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .navigation-wrapper {
   background-color: #000000;
 }
 
 /* Links */
-/* line 31, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a {
   font-weight: 400;
 }
-/* line 34, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:link {
   color: #a84598;
   text-decoration: none;
 }
-/* line 39, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:visited {
   color: #722f67;
   text-decoration: none;
 }
-/* line 44, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:hover {
   color: #b660a8;
   text-decoration: underline;
 }
-/* line 48, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:hover i[class^="icon-"] {
   text-decoration: none;
 }
-/* line 53, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 a:focus {
   color: #b660a8;
 }
 
 /* Layout background color */
-/* line 61, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .layout-wrapper {
   background-color: #fffffe;
 }
 
 /* Article background extends */
 /* Footer background color */
-/* line 83, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .footer {
   background-color: #444442;
 }
 
 /* Bottom background color */
-/* line 90, ../../../../../profiles/ding2/themes/ddbasic/sass/configuration/_configuration.scss */
 .bottom {
   background-color: #373735;
 }
@@ -368,12 +124,535 @@ a:focus {
  *
  * Usage example: pseudo-arrow(10px, #000, top, center, $offset: 20px)
    ========================================================================== */
-/* line 1, ../sass/_custom.scss */
+/**
+ * Buttons
+ *
+ * @author magnify
+ */
+/* Variables
+   ========================================================================== */
+/* Extends
+   ========================================================================== */
+.field-name-ding-entity-buttons .reserve-button, .button-see-online {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 100%;
+  padding: 8px 14px;
+  position: relative;
+  box-shadow: 0 0 1px #595959 inset;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+}
+.field-name-ding-entity-buttons .reserve-button:focus, .button-see-online:focus, .field-name-ding-entity-buttons .reserve-button:hover, .button-see-online:hover, .field-name-ding-entity-buttons .reserve-button:active, .button-see-online:active {
+  text-decoration: none;
+}
+.field-name-ding-entity-buttons .disabled.reserve-button, .disabled.button-see-online, .field-name-ding-entity-buttons [disabled].reserve-button, [disabled].button-see-online {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+  opacity: 0.65;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* Mixins
+   ========================================================================== */
+/* Default button, we dont use gradiant mixin sin since it's part of color module */
+.button,
+a.button {
+  background-color: #444443;
+  border: 1px;
+  color: #fffff8;
+  line-height: 100%;
+  padding: 8px 14px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFlMWUxZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444443), color-stop(100%, #1e1e1f));
+  background-image: -moz-linear-gradient(#444443, #1e1e1f);
+  background-image: -webkit-linear-gradient(#444443, #1e1e1f);
+  background-image: linear-gradient(#444443, #1e1e1f);
+}
+.button:link, .button:visited, .button:focus, .button:active,
+a.button:link,
+a.button:visited,
+a.button:focus,
+a.button:active {
+  color: #fffff8;
+  text-decoration: none;
+  background-image: none;
+  background-color: #444443;
+}
+.button:hover,
+a.button:hover {
+  background-color: #1e1e1e;
+  background-image: none;
+}
+
+/* Default button */
+/* Theme button */
+/* Action button */
+.field-name-ding-entity-buttons .reserve-button, .button-see-online {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwYTUwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzNTkwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #60a500), color-stop(100%, #335900));
+  background-image: -moz-linear-gradient(#60a500, #335900);
+  background-image: -webkit-linear-gradient(#60a500, #335900);
+  background-image: linear-gradient(#60a500, #335900);
+  /* Make sure buttons get a background color in IE */
+  background-color: #60a500;
+  border: 0;
+  color: #fff;
+}
+.field-name-ding-entity-buttons .reserve-button:link, .button-see-online:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited {
+  color: #fff;
+}
+.field-name-ding-entity-buttons .reserve-button:link, .button-see-online:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .field-name-ding-entity-buttons .reserve-button:focus, .button-see-online:focus, .field-name-ding-entity-buttons .reserve-button:hover, .button-see-online:hover, .field-name-ding-entity-buttons .reserve-button:active, .button-see-online:active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxOGIwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1M2YwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518b00), color-stop(100%, #253f00));
+  background-image: -moz-linear-gradient(#518b00, #253f00);
+  background-image: -webkit-linear-gradient(#518b00, #253f00);
+  background-image: linear-gradient(#518b00, #253f00);
+  background-color: #335900;
+}
+
+/* Warning button */
+/* Danger button */
+/* Don't use native buttons on iOS */
+input[type=submit].button,
+button.button {
+  -webkit-appearance: none;
+}
+
+/* Correct FF button padding */
+@-moz-document url-prefix() {
+  button::-moz-focus-inner,
+  input[type="reset"]::-moz-focus-inner,
+  input[type="button"]::-moz-focus-inner,
+  input[type="submit"]::-moz-focus-inner,
+  input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+}
+/**
+ * Rules that can be configured is located in this file.
+ */
+/* Topbar background color */
+.topbar {
+  background-color: #a49e90;
+}
+
+/* Header background color */
+.header-wrapper {
+  background-color: #a49e90;
+}
+
+/* Navigation background color */
+.navigation-wrapper {
+  background-color: #000000;
+}
+
+/* Links */
+a:link {
+  color: #a84598;
+}
+a:hover {
+  color: #b660a8;
+}
+a:focus {
+  color: #b660a8;
+}
+
+/* Layout background color */
+.layout-wrapper {
+  background-color: #fffffe;
+}
+
+/* Article background extends */
+/* Footer background color */
+.footer {
+  background-color: #444442;
+}
+
+/* Bottom background color */
+.bottom {
+  background-color: #373735;
+}
+
+/**
+ * Base
+ */
+body {
+  background-color: #efefef;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+a:link {
+  color: rgba(0, 0, 0, 0.7);
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.7);
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+a:focus {
+  color: rgba(0, 0, 0, 0.7);
+}
+a:active {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Fieldset
+   ========================================================================== */
+fieldset {
+  border-color: #efefef;
+}
+
+/**
+ * Buttons
+ */
+/* Mixins
+   ========================================================================== */
+/* Default button, we dont use gradiant mixin sin since it's part of color module */
+.button,
+a.button {
+  background-color: #444443;
+  color: #fffff8;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ0NDQ0MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFlMWUxZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444443), color-stop(100%, #1e1e1f));
+  background-image: -moz-linear-gradient(#444443, #1e1e1f);
+  background-image: -webkit-linear-gradient(#444443, #1e1e1f);
+  background-image: linear-gradient(#444443, #1e1e1f);
+}
+.button:link, .button:visited, .button:focus, .button:active,
+a.button:link,
+a.button:visited,
+a.button:focus,
+a.button:active {
+  color: #fffff8;
+  background-color: #444443;
+}
+.button:hover,
+a.button:hover {
+  background-color: #1e1e1e;
+}
+
+/* Default button */
+/* Theme button */
+/* Action button */
+.field-name-ding-entity-buttons .reserve-button, .button-see-online {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzYwYTUwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzMzNTkwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #60a500), color-stop(100%, #335900));
+  background-image: -moz-linear-gradient(#60a500, #335900);
+  background-image: -webkit-linear-gradient(#60a500, #335900);
+  background-image: linear-gradient(#60a500, #335900);
+  /* Make sure buttons get a background color in IE */
+  background-color: #60a500;
+  color: #fff;
+}
+.field-name-ding-entity-buttons .reserve-button:link, .button-see-online:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited {
+  color: #fff;
+}
+.field-name-ding-entity-buttons .reserve-button:link, .button-see-online:link, .field-name-ding-entity-buttons .reserve-button:visited, .button-see-online:visited, .field-name-ding-entity-buttons .reserve-button:focus, .button-see-online:focus, .field-name-ding-entity-buttons .reserve-button:hover, .button-see-online:hover, .field-name-ding-entity-buttons .reserve-button:active, .button-see-online:active {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUxOGIwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzI1M2YwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #518b00), color-stop(100%, #253f00));
+  background-image: -moz-linear-gradient(#518b00, #253f00);
+  background-image: -webkit-linear-gradient(#518b00, #253f00);
+  background-image: linear-gradient(#518b00, #253f00);
+  background-color: #335900;
+}
+
+/* Warning button */
+/* Danger button */
+/**
+ * Labels
+ */
+.label {
+  /* Make sure it works with a wrapper */
+}
+.label a {
+  background-color: #a84598;
+  color: #fffffd;
+}
+.label a:link, .label a:visited {
+  color: #fffffd;
+}
+.label a:hover {
+  background-color: #b660a8;
+  color: #fafaf7;
+}
+
+/**
+ * Navigation
+ */
+/* Topbar menu
+   ========================================================================== */
+.topbar-menu .menu-item {
+  color: #fffffa;
+}
+
+/* Sub menu
+   ========================================================================== */
+.sub-menu > li a {
+  color: #a84598;
+}
+.sub-menu > li a:hover {
+  color: #b660a8;
+}
+.sub-menu li:before {
+  color: #a84598;
+}
+
+/* Footer menus
+   ========================================================================== */
+.footer .pane-title {
+  color: #ffffff;
+}
+.footer .menu li:before {
+  color: #ffffff;
+}
+.footer .menu li a {
+  color: #ffffff;
+}
+
+/* Action Links
+   ========================================================================== */
+li {
+  color: #a84598;
+}
+li:before {
+  color: #a84598;
+}
+
+/**
+ * Layout
+ */
+.bottom {
+  background-color: #191919;
+}
+
+.pane-alma-item-list {
+  background-color: #fffffe;
+}
+
+/**
+ * Carousel
+ */
+.rs-carousel-inner {
+  background-color: #d8d8d8;
+}
+
+/* Pagination and previous and next buttons
+   ========================================================================== */
+.rs-carousel-action-prev,
+.rs-carousel-action-next {
+  background-color: #a49e90;
+}
+
+/* Carousel tabs
+   ========================================================================== */
+.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item a {
+  background-color: #7f7f7f;
+}
+.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item a:hover {
+  background-color: #b7b7b5;
+}
+.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item.active a {
+  background-color: #b7b7b5;
+}
+.rs-carousel-tabs .rs-carousel-list-tabs .rs-carousel-item.active a:before {
+  border: 10px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  top: -20px;
+  border-bottom-color: #b7b7b5;
+  margin-left: -10px;
+  left: 50%;
+}
+
+/**
+ * Item list
+ */
+.pane-ding-item-list {
+  background-color: #fffffe;
+}
+
+/**
+ * Item viewer
+ */
+.ding-item-viewer .ui-tabs-nav {
+  background: #373735;
+}
+
+.view-mode-ding-item-viewer-small .image-wrapper {
+  background: #373735;
+}
+
+/**
+ * Ding nodelist
+ */
+.ding_nodelist .event-time .event-day {
+  background: #a84598;
+}
+.ding_nodelist .event-label {
+  background-image: #a84598;
+}
+.ding_nodelist .node, .ding_nodelist.ding_nodelist-horizontal_accordion .data {
+  background-image: #a84598;
+}
+
+.ding_nodelist-carousel .next-prev .prev:hover,
+.ding_nodelist-carousel .next-prev .next:hover {
+  background-color: #a84598;
+}
+.ding_nodelist-carousel .next-prev .prev:after,
+.ding_nodelist-carousel .next-prev .next:after {
+  color: #a84598;
+}
+.ding_nodelist-carousel .pagination .selected {
+  background-color: #a84598;
+}
+
+.ding_nodelist-single {
+  background-color: #fffffe;
+}
+
+.ding_nodelist-slider .next-prev a:hover {
+  background-color: #a84598;
+}
+
+.ding_nodelist-taxonomy .item:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+.ding_nodelist-taxonomy .item:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/**
+ * Ding ting type search
+ */
+.pane-easyddb-search-ext-search-ext {
+  background-color: #fffffe;
+}
+
+/**
+ * Event styling
+ */
+/* Event list
+   ========================================================================== */
+.event-list .event-list-item:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+.event-list .event-list-item:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/**
+ * Groups
+ */
+/* Groups lists
+   ========================================================================== */
+.groups-list .groups-list-item {
+  background-color: #ebebeb;
+}
+.groups-list .groups-list-item:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+.groups-list .groups-list-item:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/**
+ * News
+ */
+.news-list .news-list-item {
+  background-color: #ebebeb;
+}
+.news-list .news-list-item:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+.news-list .news-list-item:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/**
+ * Opening hours
+ */
+.opening-hours-week .days .odd {
+  background-color: #e8e8e8;
+}
+.opening-hours-week .days .even {
+  background-color: #f2f2f2;
+}
+
+.pane-ding-library-opening-hours-ding-library-opened-today {
+  background-color: #fffffe;
+}
+
+/**
+ * Search
+ */
+.pane-ding-facetbrowser a:visited {
+  color: #a84598;
+}
+
+.pane-ting-search-records-per-page a {
+  border-right-color: #b660a8;
+}
+.pane-ting-search-records-per-page a.selected {
+  color: #b660a8;
+}
+
+.pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-short:before,
+.pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-long:after {
+  color: #a84598;
+}
+
+/* Search autocomplete
+   ========================================================================== */
+#autocomplete li a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/**
+ * Staff
+ */
+.staff-list .staff-list-item:nth-child(odd),
+.staff-list-all .staff-list-item:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+.staff-list .staff-list-item:nth-child(even),
+.staff-list-all .staff-list-item:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/**
+ * User
+ */
+.user-status-loan,
+.user-status-reservation {
+  color: #a84598;
+}
+
 body {
   background-color: #a49e90;
 }
 
-/* line 5, ../sass/_custom.scss */
 a:link,
 a:visited,
 .pane-ding-facetbrowser a:visited,
@@ -385,23 +664,19 @@ a:visited,
   color: #a84598;
 }
 
-/* line 16, ../sass/_custom.scss */
 .navigation-wrapper {
   background-color: transparent;
 }
 
-/* line 20, ../sass/_custom.scss */
 .site-name,
 .frontpage-layout .layout-wrapper {
   display: none;
 }
 
-/* line 26, ../sass/_custom.scss */
 .main-menu .menu-item.active {
   position: relative;
   text-decoration: none;
 }
-/* line 31, ../sass/_custom.scss */
 .main-menu .menu-item.active:after {
   background-color: #000;
   bottom: 0;
@@ -411,65 +686,53 @@ a:visited,
   position: absolute;
   width: 100%;
 }
-/* line 41, ../sass/_custom.scss */
 .main-menu li {
   display: block;
   float: left;
   width: 25%;
 }
-/* line 46, ../sass/_custom.scss */
 .main-menu li a {
   display: block;
   width: 100%;
 }
-/* line 50, ../sass/_custom.scss */
 .main-menu li a span {
   color: #fff;
   margin-left: 10px;
 }
-/* line 56, ../sass/_custom.scss */
 .main-menu li a:hover {
   color: #fff;
   text-decoration: none;
 }
-/* line 62, ../sass/_custom.scss */
 .main-menu li:first-child {
   background-color: #a84598;
 }
-/* line 66, ../sass/_custom.scss */
 .main-menu li:first-child + li {
   background-color: #178498;
 }
-/* line 70, ../sass/_custom.scss */
 .main-menu li:first-child + li + li {
   background-color: #86a0c3;
 }
-/* line 74, ../sass/_custom.scss */
 .main-menu li:first-child + li + li + li {
   background-color: #c3be2c;
 }
 
-/* line 79, ../sass/_custom.scss */
 .secondary-menu {
   background-color: #000;
   display: block;
   width: 100%;
 }
-/* line 84, ../sass/_custom.scss */
 .secondary-menu .menu-item.active,
 .secondary-menu .menu-item,
 .secondary-menu .menu-item:hover {
   color: #fff;
   font-size: 130%;
 }
-/* line 91, ../sass/_custom.scss */
 .secondary-menu .menu-item,
 .secondary-menu .first .menu-item {
   display: block;
   margin-left: 10px;
   margin-right: 0;
 }
-/* line 98, ../sass/_custom.scss */
 .secondary-menu li {
   border: none;
   display: block;
@@ -477,7 +740,6 @@ a:visited,
   width: 50%;
 }
 
-/* line 106, ../sass/_custom.scss */
 .search .form-text,
 .search-field-in-content .form-text,
 .user .form-text,
@@ -487,30 +749,25 @@ a:visited,
   border-radius: 0;
 }
 
-/* line 115, ../sass/_custom.scss */
 .search label,
 .user label {
   display: none;
 }
 
-/* line 120, ../sass/_custom.scss */
 header .search .form-actions,
 header .search-field-in-content .form-actions,
 .pane-user-login .form-actions {
   top: 0;
 }
 
-/* line 126, ../sass/_custom.scss */
 .topbar {
   margin-bottom: 13px;
 }
 
-/* line 130, ../sass/_custom.scss */
 .logo img {
   max-height: initial;
 }
 
-/* line 135, ../sass/_custom.scss */
 .topbar-menu .menu-item {
   background-color: #000;
   font-size: 180%;
@@ -519,38 +776,31 @@ header .search-field-in-content .form-actions,
   padding-top: 15px;
   text-shadow: none;
 }
-/* line 144, ../sass/_custom.scss */
 .topbar-menu .menu-item.active {
   background-color: #a84598;
 }
 
-/* line 149, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today {
   background-color: #000;
   min-height: 370px;
 }
-/* line 153, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today .pane-title,
 .pane-ding-library-opening-hours-ding-library-opened-today .library .hours {
   color: #fff;
 }
-/* line 158, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library,
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library:nth-of-type(2n+2) {
   background-color: transparent;
   border-bottom: 1px dashed #fff;
 }
-/* line 164, ../sass/_custom.scss */
 .pane-ding-library-opening-hours-ding-library-opened-today ul .library:first-child {
   border-top: 1px dashed #fff;
 }
 
-/* line 169, ../sass/_custom.scss */
 .ding-library-opening-hours .day .hours {
   color: #fff;
 }
 
-/* line 173, ../sass/_custom.scss */
 .ding_nodelist .event-time .event-day,
 .ding_nodelist-carousel .pagination .selected,
 .label a:link,
@@ -569,7 +819,6 @@ header .search-field-in-content .form-actions,
   background-color: #a84598;
 }
 
-/* line 191, ../sass/_custom.scss */
 .label a:hover,
 .view-node-search-result .list-item .field-type-taxonomy-term-reference a a:hover,
 .ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:hover,
@@ -579,24 +828,20 @@ header .search-field-in-content .form-actions,
   background-color: #b660a8;
 }
 
-/* line 200, ../sass/_custom.scss */
 .bottom {
   background-color: #191919;
 }
 
-/* line 205, ../sass/_custom.scss */
 .sub-menu > li {
   background-color: #a84598;
   padding-left: 10px;
 }
-/* line 210, ../sass/_custom.scss */
 .sub-menu > li a,
 .sub-menu > li a:hover,
 .sub-menu li:before {
   color: #fff;
 }
 
-/* line 217, ../sass/_custom.scss */
 .attachment-first {
   float: left;
   width: 33.33333%;
@@ -611,7 +856,6 @@ header .search-field-in-content .form-actions,
   word-wrap: break-word;
 }
 
-/* line 221, ../sass/_custom.scss */
 .attachment-second {
   float: left;
   width: 33.33333%;
@@ -626,7 +870,6 @@ header .search-field-in-content .form-actions,
   word-wrap: break-word;
 }
 
-/* line 225, ../sass/_custom.scss */
 .attachment-third {
   float: right;
   width: 33.33333%;
@@ -641,36 +884,30 @@ header .search-field-in-content .form-actions,
   word-wrap: break-word;
 }
 
-/* line 229, ../sass/_custom.scss */
 .attachment-fourth {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 234, ../sass/_custom.scss */
   .main-menu li {
     padding-left: 10px;
     width: 100%;
   }
 
-  /* line 239, ../sass/_custom.scss */
   .secondary-menu li {
     background-color: #000;
     padding-left: 10px;
     width: 100%;
   }
 
-  /* line 245, ../sass/_custom.scss */
   .pane-ding-library-opening-hours-ding-library-opened-today {
     min-height: initial;
   }
 
-  /* line 249, ../sass/_custom.scss */
   .topbar-menu .menu-item {
     font-size: 100%;
   }
 
-  /* line 253, ../sass/_custom.scss */
   .attachment-first,
   .attachment-third,
   .attachment-second {
