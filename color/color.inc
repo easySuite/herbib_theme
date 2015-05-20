@@ -58,7 +58,7 @@ $info = array(
         'base' => '#0072b9',
         'text' => '#494949',
         'body_background_color' => '#a49e90',
-        'topbar_background_color' => '#d8d8d8a49e90',
+        'topbar_background_color' => '#d8d8d8',
         'topbar_text_color' => '#fffffa',
         'header_background_color' => '#a49e90',
         'menu_item_1_background_color' => '#a84598',
@@ -140,7 +140,7 @@ $info = array(
 
   // CSS files (excluding @import) to rewrite with new color scheme.
   'css' => array(
-    'css/ddbasic.styles.css',
+    'css/herlev.styles.css',
   ),
 
   // Color areas to fill (x, y, width, height).
