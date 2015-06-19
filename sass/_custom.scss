@@ -13,6 +13,12 @@ a:visited,
   color: $link-color;
 }
 
+.ding_nodelist-horizontal_accordion .expand,
+.ding_nodelist-horizontal_accordion .slide-open .expand,
+.ding_nodelist-slider .next-prev a {
+  background-color: $topbar-background-color;
+}
+
 .navigation-wrapper {
   background-color: transparent;
 }
@@ -134,10 +140,12 @@ header .search-field-in-content .form-actions,
 .topbar-menu {
   .menu-item {
     background-color: $black;
-    font-size: $font-size-largest;
+    font-size: $font-size-larger;
+	line-height: 60px;
     margin-left: 20px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+	min-height: 60px;
+	padding-bottom: 0;
+	padding-top: 0;
     text-shadow: none;
   }
   
@@ -226,8 +234,18 @@ header .search-field-in-content .form-actions,
   @include zen-grid-item(4, 1, right);
 }
 
-.attachment-fourth {
+.attachment-fourth,
+.ding_nodelist .category,
+.ding_nodelist .article-info .label {
   display: none;
+}
+
+.main-menu .menu-item,
+.header-wrapper .pane-user-menu .sub-menu .menu-item,
+.secondary-menu .menu-item,
+.system-user-menu .menu-item {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 @include small-medium() {
