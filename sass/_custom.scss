@@ -33,7 +33,7 @@ a:visited,
     position: relative;
     text-decoration: none;
   }
-  
+
   .menu-item.active:after {
     background-color: $black;
     bottom: 0;
@@ -43,22 +43,22 @@ a:visited,
     position: absolute;
     width: 100%;
   }
-  
+
   li {
     display: block;
     float: left;
     width: 25%;
-    
+
     a {
       display: block;
       width: 100%;
-     
+
       span {
         color: $white;
         margin-left: 10px;
       }
     }
-    
+
     a:hover {
       color: $white;
       text-decoration: none;
@@ -86,21 +86,21 @@ a:visited,
   background-color: $black;
   display: block;
   width: 100%;
-  
+
   .menu-item.active,
   .menu-item,
   .menu-item:hover {
     color: $white;
     font-size: $font-size-large;
   }
-  
+
   .menu-item,
   .first .menu-item {
     display: block;
     margin-left: 10px;
     margin-right: 0;
   }
-  
+
   li {
     border: none;
     display: block;
@@ -141,14 +141,14 @@ header .search-field-in-content .form-actions,
   .menu-item {
     background-color: $black;
     font-size: $font-size-larger;
-  line-height: 60px;
+    line-height: 60px;
     margin-left: 20px;
-  min-height: 60px;
-  padding-bottom: 0;
-  padding-top: 0;
+    min-height: 60px;
+    padding-bottom: 0;
+    padding-top: 0;
     text-shadow: none;
   }
-  
+
   .menu-item.active {
     background-color: $menu-item-1-background-color;
   }
@@ -157,18 +157,18 @@ header .search-field-in-content .form-actions,
 .pane-ding-library-opening-hours-ding-library-opened-today {
   background-color: $black;
   min-height: 370px;
-  
+
   .pane-title,
   .library .hours {
     color: $white;
   }
-  
+
   ul .library,
   ul .library:nth-of-type(2n+2) {
     background-color: transparent;
     border-bottom: 1px dashed $white;
   }
-  
+
   ul .library:first-child {
     border-top: 1px dashed $white;
   }
@@ -214,7 +214,7 @@ header .search-field-in-content .form-actions,
     background-color: $menu-item-1-background-color;
     padding-left: 10px;
   }
-  
+
   > li a,
   > li a:hover,
   li:before {
@@ -253,21 +253,21 @@ header .search-field-in-content .form-actions,
     padding-left: 10px;
     width: 100%;
   }
-  
+
   .secondary-menu li {
     background-color: $black;
     padding-left: 10px;
     width: 100%;
   }
-  
+
   .pane-ding-library-opening-hours-ding-library-opened-today {
     min-height: initial;
   }
-  
+
   .topbar-menu .menu-item {
     font-size: $font-size-reset;
   }
-  
+
   .attachment-first,
   .attachment-third,
   .attachment-second {
