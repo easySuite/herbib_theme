@@ -67,26 +67,23 @@
 }
 
 /* Links */
-a {
-  font-weight: 400;
-}
 a:link {
-  color: #a84598;
+  color: #333333;
   text-decoration: none;
 }
 a:visited {
-  color: #722f67;
+  color: #0d0d0d;
   text-decoration: none;
 }
 a:hover {
-  color: #b660a8;
+  color: #444444;
   text-decoration: underline;
 }
 a:hover i[class^="icon-"] {
   text-decoration: none;
 }
 a:focus {
-  color: #b660a8;
+  color: #444444;
 }
 
 /* Layout background color */
@@ -262,13 +259,13 @@ button.button {
 
 /* Links */
 a:link {
-  color: #a84598;
+  color: #333333;
 }
 a:hover {
-  color: #b660a8;
+  color: #444444;
 }
 a:focus {
-  color: #b660a8;
+  color: #444444;
 }
 
 /* Layout background color */
@@ -384,14 +381,14 @@ a.button:hover {
   /* Make sure it works with a wrapper */
 }
 .label a {
-  background-color: #a84598;
+  background-color: #333333;
   color: #fffffd;
 }
 .label a:link, .label a:visited {
   color: #fffffd;
 }
 .label a:hover {
-  background-color: #b660a8;
+  background-color: #444444;
   color: #fafaf7;
 }
 
@@ -407,13 +404,13 @@ a.button:hover {
 /* Sub menu
    ========================================================================== */
 .sub-menu > li a {
-  color: #a84598;
+  color: #333333;
 }
 .sub-menu > li a:hover {
-  color: #b660a8;
+  color: #444444;
 }
 .sub-menu li:before {
-  color: #a84598;
+  color: #333333;
 }
 
 /* Footer menus
@@ -431,10 +428,10 @@ a.button:hover {
 /* Action Links
    ========================================================================== */
 .action-links li {
-  color: #a84598;
+  color: #333333;
 }
 .action-links li:before {
-  color: #a84598;
+  color: #333333;
 }
 
 /**
@@ -507,25 +504,25 @@ a.button:hover {
  * Ding nodelist
  */
 .ding_nodelist .event-time .event-day {
-  background: #a84598;
+  background: #333333;
 }
 .ding_nodelist .event-label {
-  background-image: #a84598;
+  background-image: #333333;
 }
 .ding_nodelist .node, .ding_nodelist.ding_nodelist-horizontal_accordion .data {
-  background-image: #a84598;
+  background-image: #333333;
 }
 
 .ding_nodelist-carousel .next-prev .prev:hover,
 .ding_nodelist-carousel .next-prev .next:hover {
-  background-color: #a84598;
+  background-color: #333333;
 }
 .ding_nodelist-carousel .next-prev .prev:after,
 .ding_nodelist-carousel .next-prev .next:after {
-  color: #a84598;
+  color: #333333;
 }
 .ding_nodelist-carousel .pagination .selected {
-  background-color: #a84598;
+  background-color: #333333;
 }
 
 .ding_nodelist-single {
@@ -533,7 +530,7 @@ a.button:hover {
 }
 
 .ding_nodelist-slider .next-prev a:hover {
-  background-color: #a84598;
+  background-color: #333333;
 }
 
 .ding_nodelist-taxonomy .item:nth-child(odd) {
@@ -608,19 +605,19 @@ a.button:hover {
  * Search
  */
 .pane-ding-facetbrowser a:visited {
-  color: #a84598;
+  color: #333333;
 }
 
 .pane-ting-search-records-per-page a {
-  border-right-color: #b660a8;
+  border-right-color: #444444;
 }
 .pane-ting-search-records-per-page a.selected {
-  color: #b660a8;
+  color: #444444;
 }
 
 .pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-short:before,
 .pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-long:after {
-  color: #a84598;
+  color: #333333;
 }
 
 /* Search autocomplete
@@ -646,7 +643,7 @@ a.button:hover {
  */
 .user-status-loan,
 .user-status-reservation {
-  color: #a84598;
+  color: #333333;
 }
 
 /**
@@ -675,7 +672,13 @@ a:visited,
 .pane-ding-toggle-format-toggle #ding-toggle-format.ding-toggle-format-long:after,
 .pane-ting-object .collapsible .field-group-format-title:before,
 .pane-ting-object .ding-periodical-fold:before {
-  color: #a84598;
+  color: #333333;
+}
+
+.ding_nodelist-horizontal_accordion .expand,
+.ding_nodelist-horizontal_accordion .slide-open .expand,
+.ding_nodelist-slider .next-prev a {
+  background-color: #a49e90;
 }
 
 .navigation-wrapper {
@@ -784,10 +787,12 @@ header .search-field-in-content .form-actions,
 
 .topbar-menu .menu-item {
   background-color: #000;
-  font-size: 180%;
+  font-size: 160%;
+  line-height: 60px;
   margin-left: 20px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  min-height: 60px;
+  padding-bottom: 0;
+  padding-top: 0;
   text-shadow: none;
 }
 .topbar-menu .menu-item.active {
@@ -830,7 +835,7 @@ header .search-field-in-content .form-actions,
 .news-list .news-label a:visited,
 .super-heading .field-name-field-ding-news-library .field-item a:visited,
 .event-list-leaf .event-list-day {
-  background-color: #a84598;
+  background-color: #333333;
 }
 
 .label a:hover,
@@ -839,7 +844,7 @@ header .search-field-in-content .form-actions,
 .subjects .subject a:hover,
 .news-list .news-label a:hover,
 .super-heading .field-name-field-ding-news-library .field-item a:hover {
-  background-color: #b660a8;
+  background-color: #444444;
 }
 
 .bottom {
@@ -898,8 +903,18 @@ header .search-field-in-content .form-actions,
   word-wrap: break-word;
 }
 
-.attachment-fourth {
+.attachment-fourth,
+.ding_nodelist .category,
+.ding_nodelist .article-info .label {
   display: none;
+}
+
+.main-menu .menu-item,
+.header-wrapper .pane-user-menu .sub-menu .menu-item,
+.secondary-menu .menu-item,
+.system-user-menu .menu-item {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
