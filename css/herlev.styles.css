@@ -920,6 +920,12 @@ header .search-field-in-content .form-actions,
   padding-top: 10px;
 }
 
+.ding_nodelist .node .item-date,
+.ding_nodelist .node .library,
+.ding_nodelist .node .item-price {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .main-menu li {
     padding-left: 10px;
