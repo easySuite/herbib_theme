@@ -675,6 +675,10 @@ a:visited,
   color: #333333;
 }
 
+.ding-library-opened-today a {
+  color: #fff;
+}
+
 .ding_nodelist-horizontal_accordion .expand,
 .ding_nodelist-horizontal_accordion .slide-open .expand,
 .ding_nodelist-slider .next-prev a {
@@ -851,7 +855,7 @@ header .search-field-in-content .form-actions,
 }
 
 .sub-menu > li {
-  background-color: #a84598;
+  background-color: #333333;
   padding-left: 10px;
 }
 .sub-menu > li a,
@@ -914,6 +918,12 @@ header .search-field-in-content .form-actions,
 .system-user-menu .menu-item {
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.ding_nodelist .node .item-date,
+.ding_nodelist .node .library,
+.ding_nodelist .node .item-price {
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {

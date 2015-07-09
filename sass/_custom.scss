@@ -13,6 +13,12 @@ a:visited,
   color: $link-color;
 }
 
+.ding-library-opened-today {
+  a {
+    color: $white;
+  }
+}
+
 .ding_nodelist-horizontal_accordion .expand,
 .ding_nodelist-horizontal_accordion .slide-open .expand,
 .ding_nodelist-slider .next-prev a {
@@ -210,7 +216,7 @@ header .search-field-in-content .form-actions,
 
 .sub-menu {
   > li {
-    background-color: $menu-item-1-background-color;
+    background-color: $link-color;
     padding-left: 10px;
   }
 
@@ -245,6 +251,16 @@ header .search-field-in-content .form-actions,
 .system-user-menu .menu-item {
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+.ding_nodelist {
+  .node {
+    .item-date,
+    .library,
+    .item-price {
+      display: none;
+    }
+  }
 }
 
 @include small-medium() {
