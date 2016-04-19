@@ -799,7 +799,7 @@ header .search-field-in-content .form-actions,
 }
 
 .logo img {
-  max-height: initial;
+  max-height: inherit;
 }
 
 .topbar-menu .menu-item {
@@ -880,44 +880,38 @@ header .search-field-in-content .form-actions,
 
 .attachment-first {
   float: left;
-  width: 33.33333%;
+  width: 400%;
   margin-left: 0%;
-  margin-right: -33.33333%;
+  margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   box-sizing: border-box;
-  word-wrap: break-word;
 }
 
 .attachment-second {
   float: left;
-  width: 33.33333%;
-  margin-left: 33.33333%;
-  margin-right: -66.66667%;
+  width: 400%;
+  margin-left: 400%;
+  margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   box-sizing: border-box;
-  word-wrap: break-word;
 }
 
 .attachment-third {
   float: right;
-  width: 33.33333%;
+  width: 400%;
   margin-right: 0%;
-  margin-left: -33.33333%;
+  margin-left: -100%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   box-sizing: border-box;
-  word-wrap: break-word;
 }
 
 .attachment-fourth,
@@ -963,17 +957,15 @@ header .search-field-in-content .form-actions,
   .attachment-first,
   .attachment-third,
   .attachment-second {
-    clear: left;
     float: left;
-    width: 100%;
+    width: 1200%;
     margin-left: 0%;
     margin-right: -100%;
     padding-left: 10px;
     padding-right: 10px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
-    word-wrap: break-word;
+    clear: both;
   }
 }
