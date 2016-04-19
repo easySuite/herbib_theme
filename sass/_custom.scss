@@ -155,7 +155,7 @@ header .search-field-in-content .form-actions,
 }
 
 .logo img {
-  max-height: initial;
+  max-height: inherit;
 }
 
 .topbar-menu {
@@ -302,7 +302,7 @@ header .search-field-in-content .form-actions,
   .attachment-first,
   .attachment-third,
   .attachment-second {
-    @include zen-clear();
     @include zen-grid-item(12, 1);
+    clear: both;
   }
 }
