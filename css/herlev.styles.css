@@ -880,7 +880,7 @@ header .search-field-in-content .form-actions,
 
 .attachment-first {
   float: left;
-  width: 400%;
+  width: 33.33333%;
   margin-left: 0%;
   margin-right: -100%;
   padding-left: 10px;
@@ -892,8 +892,8 @@ header .search-field-in-content .form-actions,
 
 .attachment-second {
   float: left;
-  width: 400%;
-  margin-left: 400%;
+  width: 33.33333%;
+  margin-left: 33.33333%;
   margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -904,7 +904,7 @@ header .search-field-in-content .form-actions,
 
 .attachment-third {
   float: right;
-  width: 400%;
+  width: 33.33333%;
   margin-right: 0%;
   margin-left: -100%;
   padding-left: 10px;
@@ -958,7 +958,7 @@ header .search-field-in-content .form-actions,
   .attachment-third,
   .attachment-second {
     float: left;
-    width: 1200%;
+    width: 100%;
     margin-left: 0%;
     margin-right: -100%;
     padding-left: 10px;
