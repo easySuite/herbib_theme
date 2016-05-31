@@ -359,4 +359,8 @@ header .search-field-in-content .form-actions,
   .secondary-menu-wrapper {
     padding-left: 0;
   }
+
+  .main-menu li a:after {
+    display: none !important;
+  }
 }
