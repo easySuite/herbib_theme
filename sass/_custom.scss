@@ -60,6 +60,10 @@ a:visited,
     left: 0;
     position: absolute;
     width: 100%;
+
+    @include small-medium() {
+      display: none;
+    }
   }
 
   li {
@@ -80,6 +84,23 @@ a:visited,
     a:hover {
       color: $white;
       text-decoration: none;
+    }
+
+    .main-menu li:first-child,
+    .main-menu li:first-child + li,
+    .main-menu li:first-child + li + li,
+    .main-menu li:first-child + li + li + li {
+      background-color: transparent;
+    }
+
+    .main-menu .menu-item.active:after {
+      display: none;
+    }
+
+    .main-menu li {
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+      border-bottom: none;
+      display: block;
     }
   }
 
@@ -124,6 +145,13 @@ a:visited,
     display: block;
     float: left;
     width: 50%;
+  }
+
+  @include small-medium() {
+    span {
+      font-size: 16px;
+      margin-left: 10px;
+    }
   }
 }
 
@@ -283,6 +311,24 @@ header .search-field-in-content .form-actions,
 }
 
 @include small-medium() {
+  .user div .form-item-name,
+  .user div .form-item-pass {
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .navigation-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .topbar-inner .topbar-menu {
+    right: 10px;
+    width: 70%;
+  }
+
   .main-menu li {
     padding-left: 10px;
     width: 100%;
@@ -307,5 +353,10 @@ header .search-field-in-content .form-actions,
   .attachment-second {
     @include zen-grid-item(12, 1);
     clear: both;
+  }
+
+  .main-menu-wrapper,
+  .secondary-menu-wrapper {
+    padding-left: 0;
   }
 }
