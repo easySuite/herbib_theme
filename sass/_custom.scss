@@ -244,7 +244,9 @@ header .search-field-in-content .form-actions,
 .subjects .subject a:visited,
 .news-list .news-label a:visited,
 .super-heading .field-name-field-ding-news-library .field-item a:visited,
-.event-list-leaf .event-list-day {
+.event-list-leaf .event-list-day, 
+.ting-search-carousel .slick-prev, 
+.ting-search-carousel .slick-next {
   background-color: $label-bg-color;
 }
 
