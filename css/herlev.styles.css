@@ -104,6 +104,15 @@ a:focus {
   background-color: #373735;
 }
 
+#eventsCalendar #calendar tr td.calendar-day.has-events.selected, #eventsCalendar #calendar tr td.calendar-day.has-events.selected.has-events {
+  background-color: #a84598;
+}
+
+#eventsCalendar .navi-heading .next,
+#eventsCalendar .navi-heading .prev {
+  background-color: #a84598;
+}
+
 /**
  * Mixins
  *

@@ -1,0 +1,15 @@
+
+
+#eventsCalendar #calendar tr td.calendar-day.has-events {
+  &.selected,
+  &.selected.has-events {
+    background-color: #a84598;
+  }
+}
+
+#eventsCalendar .navi-heading {
+  .next,
+  .prev {
+    background-color: #a84598;
+  }
+}
