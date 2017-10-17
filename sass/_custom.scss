@@ -366,3 +366,11 @@ header .search-field-in-content .form-actions,
     display: none !important;
   }
 }
+
+section.wayf-wrapper {
+  visibility: hidden;
+}
+
+.header-inner section.pane-user-login {
+  padding-bottom: 10px !important; 
+}
