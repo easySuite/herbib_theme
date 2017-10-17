@@ -457,7 +457,7 @@ a.button:hover {
  * Carousel
  */
 .rs-carousel-inner {
-  background: none;
+  background-color: #d8d8d8;
 }
 
 /* Pagination and previous and next buttons
@@ -1031,4 +1031,11 @@ header .search-field-in-content .form-actions,
   .main-menu li a:after {
     display: none !important;
   }
+}
+section.wayf-wrapper {
+  visibility: hidden;
+}
+
+.header-inner section.pane-user-login {
+  padding-bottom: 10px !important;
 }
