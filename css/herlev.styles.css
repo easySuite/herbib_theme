@@ -979,6 +979,10 @@ header .search-field-in-content .form-actions,
     width: 100%;
   }
 
+  .user .form-item-pass {
+    margin-top: 60px;
+  }
+
   .navigation-wrapper {
     padding-left: 10px;
     padding-right: 10px;
@@ -1030,6 +1034,11 @@ header .search-field-in-content .form-actions,
 
   .main-menu li a:after {
     display: none !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .user .form-item-pass {
+    margin-top: 0px;
   }
 }
 section.wayf-wrapper {
