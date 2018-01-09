@@ -979,7 +979,7 @@ header .search-field-in-content .form-actions,
     width: 100%;
   }
 
-  .user div .form-item-pass {
+  .user .form-item-pass {
     margin-top: 60px;
   }
 
@@ -1037,7 +1037,7 @@ header .search-field-in-content .form-actions,
   }
 }
 @media only screen and (max-width: 480px) {
-  .user div .form-item-pass {
+  .user .form-item-pass {
     margin-top: 0px;
   }
 }
